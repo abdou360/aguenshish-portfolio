@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+
+# Build files
+build/
+dist/
+
+# Local environment files
+.env
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+
+# Test coverage directory
+coverage/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+.idea/
+*.iml
+
+# ESLint
+.eslintcache
+
+# React
+build/
