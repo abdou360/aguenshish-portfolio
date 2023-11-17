@@ -1,8 +1,8 @@
 {
-  "name": "trydo",
+  "name": "aguenshish",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://trydo.rainbowit.net",
+  "homepage": "",
   "basename": "/",
   "dependencies": {
     "@babel/core": "*",
