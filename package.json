@@ -1,6 +1,6 @@
 {
   "name": "aguenshish",
-  "version": "*",
+  "version": "0.1.0",
   "private": true,
   "homepage": "",
   "basename": "/",
@@ -63,6 +63,7 @@
     "react-parallax": "*",
     "react-reveal": "*",
     "react-router-dom": "*",
+    "react-scripts": "^5.0.1",
     "react-scroll-up": "*",
     "react-scrollspy": "*",
     "react-slick": "*",
@@ -86,10 +87,10 @@
     "workbox-webpack-plugin": "*"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "clean": "rmdir /s /q build node_modules"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
