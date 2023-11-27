@@ -5,8 +5,8 @@ import { FiClock , FiUser , FiMessageCircle , FiHeart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import FooterTwo from "../component/footer/FooterTwo";
-import HeaderSix from "../component/header/HeaderSix";
+import Header from "../component/header/Header";
+import Footer from "../component/footer/Footer";
 
 class BlogDetails extends Component{
     constructor () {
@@ -23,7 +23,7 @@ class BlogDetails extends Component{
         return(
             <React.Fragment>
                 <PageHelmet pageTitle='Blog Details' />
-                <HeaderSix homeLink="/" logo="symbol-dark" colorblack="color-black" headertransparent="header--transparent" />
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
                 
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--7" data-black-overlay="7">
@@ -152,7 +152,7 @@ class BlogDetails extends Component{
                 </div>
                 {/* End Back To Top */}
                 
-                <FooterTwo /> 
+                <Footer /> 
 
             </React.Fragment>
         )

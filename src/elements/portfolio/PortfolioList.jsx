@@ -5,7 +5,7 @@ const PortfolioListContent = [
     {
         image: 'image-1',
         category: 'Development',
-        title: 'The Enterprises Cash Flow Management'
+        title: 'Getting tickets to the big show'
     },
     {
         image: 'image-2',

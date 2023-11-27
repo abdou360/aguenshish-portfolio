@@ -4,8 +4,8 @@ import ModalVideo from 'react-modal-video';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import FooterTwo from "../component/footer/FooterTwo";
-import HeaderSix from "../component/header/HeaderSix";
+import Header from "../component/header/Header";
+import Footer from "../component/footer/Footer";
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
@@ -29,15 +29,17 @@ class PortfolioDetails extends Component{
         return(
             <React.Fragment>
                 <PageHelmet pageTitle='Portfolio Details' />
-                <HeaderSix homeLink="/" logo="symbol-dark" color="color-black" colorblack="color-black"/>
+
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+                
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--4"  data-black-overlay="7">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Enterprises Cash Flow Management</h2>
-                                    <p>Cash flow management is a critical aspect of financial management for enterprises. It involves monitoring, analyzing, and optimizing the flow of cash in and out of a business to ensure that it has enough liquidity to meet its financial obligations and pursue growth opportunities </p>
+                                    <h2 className="title theme-gradient">Getting tickets to the big show</h2>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +54,7 @@ class PortfolioDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="portfolio-details">
                                     <div className="inner">
-                                        <h2>1- Cash Flow Models</h2>
+                                        <h2>Trydo</h2>
                                         <p className="subtitle">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p>
 
@@ -158,7 +160,7 @@ class PortfolioDetails extends Component{
                 </div>
                 {/* End Back To Top */}
                 
-                <FooterTwo />  
+                <Footer />  
 
 
             </React.Fragment>

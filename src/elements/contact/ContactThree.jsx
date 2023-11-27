@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { FaBusinessTime } from "react-icons/fa";
 
 class ContactThree extends Component{
     constructor(props){
@@ -18,9 +17,9 @@ class ContactThree extends Component{
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <h2 className="title">{this.props.contactTitle}  <FaBusinessTime size={50}/></h2>
-                                <p className="description">I am available for freelance work. Connect with me via phone: <a href="tel:+212652897546">(212) 652897546</a> or email:
-                                    <a href="aguenchich.ma@gmail.com"> aguenchich.ma@gmail.com</a> </p>
+                                <h2 className="title">{this.props.contactTitle}</h2>
+                                <p className="description">I am available for freelance work. Connect with me via phone: <a href="tel:+8801923088574">01923 088574</a> or email:
+                                    <a href="mailto:admin@example.com"> admin@example.com</a> </p>
                             </div>
                             <div className="form-wrapper">
                                 <form>

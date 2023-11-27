@@ -3,8 +3,8 @@ import PageHelmet from "../component/common/Helmet";
 import ModalVideo from 'react-modal-video';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import HeaderSix from "../component/header/HeaderSix";
-import FooterTwo from "../component/footer/FooterTwo";
+import Header from "../component/header/Header";
+import Footer from "../component/footer/Footer";
 
 
 class ServiceDetails extends Component{
@@ -26,7 +26,8 @@ class ServiceDetails extends Component{
                 <PageHelmet pageTitle='Service Details' />
                 {/* End Pagehelmet  */}
 
-                <HeaderSix homeLink="/" logo="symbol-dark" color="color-black" colorblack="color-black"/>
+                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
+
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"  data-black-overlay="5">
                     <div className="container">
@@ -113,7 +114,7 @@ class ServiceDetails extends Component{
                 </div>
                 {/* End Back To Top */}
                 
-                <FooterTwo />
+                <Footer />
 
             </React.Fragment>
         )

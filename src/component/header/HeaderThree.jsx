@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import { FaInstagram ,FaFacebookF , FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
-
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaXTwitter /> , link: 'https://twitter.com/'}
+    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
 ]
 class HeaderThree extends Component{
     constructor(props) {
@@ -78,12 +76,12 @@ class HeaderThree extends Component{
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','projects','news','contact']} currentClassName="is-current" offset={-200}>
+                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','blog','contact']} currentClassName="is-current" offset={-200}>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#service">Service</a></li>
-                                <li><a href="#portfolio">Projects</a></li>
-                                <li><a href="#blog">News</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#blog">Blog</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </Scrollspy>
                         </nav>
@@ -96,11 +94,11 @@ class HeaderThree extends Component{
                                 ))}
                             </ul>
                         </div>
-                        {/* <div className="header-btn">
-                            <a className="rn-btn" href="#contact">
-                               <span>  </span>
+                        <div className="header-btn">
+                            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
+                                <span>buy now</span>
                             </a>
-                        </div> */}
+                        </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
                             <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>

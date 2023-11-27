@@ -21,12 +21,13 @@ const SlideList = [
     }
 ]
 const PortfolioLanding = () => {
-    let title = 'Who Am I ?',
-        description = "I'm a software engineer, I like problems, I enjoy finding solutions and I love errors. This is how it works";
+    let title = 'About Me',
+        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
-            <Helmet pageTitle="aguenchich_abdelaziz" />
+            <Helmet pageTitle="Portfolio Landing" />
+
             <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
             <div id="home" className="fix">
@@ -38,16 +39,15 @@ const PortfolioLanding = () => {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
-                                            {/* {value.category ? <span>{value.category}</span> : ''} */}
-                                            <h1 className="title">𝒜𝒢𝒰𝐸𝒩𝒞𝐻𝐼𝒞𝐻 𝓪𝓫𝓭𝓮𝓵𝓪𝔃𝓲𝔃<br/>
+                                            {value.category ? <span>{value.category}</span> : ''}
+                                            <h1 className="title">Hi, I’m Jone Doe <br/>
                                             <TextLoop>
-                                                <span style={{fontSize:40}}>Full Stack Developer.</span>
-                                                <span style={{fontSize:40}}> I Use ASP Dotnet Core ;</span>
-                                                <span style={{fontSize:40}}> React & Angular ;</span>
-                                                <span style={{fontSize:40}}> Services Of Azure & AWS</span>
+                                                <span> JS Developer.</span>
+                                                <span> UI/UX Designer.</span>
+                                                <span> Content Writter.</span>
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h4>Based In Morocco.</h4>
+                                            <h2>based in USA.</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -63,13 +63,13 @@ const PortfolioLanding = () => {
 
             {/* Start About Area */}
             <div id="about" className="fix">
-                <div className="about-area ptb--100  bg_color--1">
+                <div className="about-area ptb--120  bg_color--1">
                     <div className="about-wrapper">
                         <div className="container">
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/dark-side.png" alt="About Images"/>
+                                        <img className="w-100" src="/assets/images/about/about-8.jpg" alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -98,8 +98,8 @@ const PortfolioLanding = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">my capabilities extend to</h2>
-                                    <p>-------------</p>
+                                    <h2 className="title">My Awesome Service</h2>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                                 </div>
                             </div>
                         </div>
@@ -121,8 +121,8 @@ const PortfolioLanding = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈</h2>
-                                        <p>Projects are journeys of passion, challenges, and growth. Embrace each step, celebrate milestones, and let every obstacle be a stepping stone to success.</p>
+                                        <h2 className="title">My Latest Project</h2>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                                     </div>
                                 </div>
                             </div>
@@ -149,8 +149,8 @@ const PortfolioLanding = () => {
                         <div className="row align-items-end">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="section-title text-center">
-                                    <h2>ℕ𝕖𝕨𝕤</h2>
-                                    <h6>Life's only vacancy is death.</h6><p> In my free time, I explore passions and embrace moments that define a purposeful existence </p>
+                                    <h2>Latest News</h2>
+                                    <p>There are many variations of passages of Lorem Ipsum available, <br />but the majority have suffered alteration.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,9 +181,8 @@ const PortfolioLanding = () => {
 
             {/* Start COntact Area */}
             <div id="contact" className="fix">
-                <div className="rn-contact-area ptb--0 bg_color--1">
-                    <br/>
-                    <ContactThree contactImages="/assets/images/about/abdelaziz.jpg" contactTitle={"Hire Me"}/>
+                <div className="rn-contact-area ptb--120 bg_color--1">
+                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
                 </div>
             </div>
             {/* End COntact Area */}
