@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const isWsl = require('is-wsl');
+const isWsl = import('is-wsl');
 const path = require('path');
 const webpack = require('webpack');
 const resolve = require('resolve');
